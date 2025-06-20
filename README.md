@@ -111,6 +111,11 @@ This project simulates a voice-driven sales agent capable of:
 | Lack of persistent DB | Used ChromaDB for fast, vector-based memory |
 | No real telephony support | Mocked interaction with UI & audio playback |
 
+## To run this
+
+- pip install -r requirements.txt
+- uvicorn Latestmain:app --host 0.0.0.0 --port 8000
+- streamlit run Latest_Intrface.py
 
 ##  Future Improvements
 
