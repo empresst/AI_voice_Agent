@@ -4,7 +4,7 @@ A CPU-efficient AI Voice Sales Agent that simulates real-time sales calls for th
 
 ---
 
-## 🚀 Project Context
+##  Project Context
 
 This project simulates a voice-driven sales agent capable of:
 - Conversational pitching
@@ -15,9 +15,9 @@ This project simulates a voice-driven sales agent capable of:
 
 ---
 
-## 🧠 Architecture Overview
+##  Architecture Overview
 
-### 📌 Components
+###  Components
 
 - **FastAPI Server**: Handles `/start-call`, `/respond/{call_id}`, and `/conversation/{call_id}` endpoints.
 - **Conversation Engine**: State-machine-based flow (Intro → Qualification → Pitch → Objection → Closing).
@@ -33,7 +33,7 @@ This project simulates a voice-driven sales agent capable of:
 
 ---
 
-## 🔧 Tech Stack
+##  Tech Stack
 
 | Purpose             | Tool                          |
 |---------------------|-------------------------------|
@@ -49,7 +49,7 @@ This project simulates a voice-driven sales agent capable of:
 
 ---
 
-## 📈 Data Flow
+##  Data Flow
 
 1. Call is initiated via Streamlit or API.
 2. FastAPI assigns a unique `call_id` and sends an initial greeting.
@@ -64,7 +64,7 @@ This project simulates a voice-driven sales agent capable of:
 
 ---
 
-## ⚖️ Key Architecture Decisions & Trade-offs
+##  Key Architecture Decisions & Trade-offs
 
 - **LLM Choice**: DistilGPT-2 chosen over larger models like LLaMA to meet CPU constraint.
 - **Voice Quality**: gTTS used despite robotic tone to ensure low resource usage.
@@ -73,7 +73,7 @@ This project simulates a voice-driven sales agent capable of:
 
 ---
 
-## 🧩 Implementation Timeline
+##  Implementation Timeline
 
 | Day | Task |
 |-----|------|
@@ -83,7 +83,7 @@ This project simulates a voice-driven sales agent capable of:
 
 ---
 
-## 🧠 Creative Features
+##  Creative Features
 
 - **Streamlit Dashboard**: Visualizes conversation, sentiment, and sales intent.
 - **Sentiment Charts**: Gauge customer interest live using DistilBERT.
@@ -93,7 +93,7 @@ This project simulates a voice-driven sales agent capable of:
 
 ---
 
-## ⚡ Performance Optimizations
+##  Performance Optimizations
 
 - Used ultra-light models (DistilGPT-2, Whisper-Tiny).
 - Cached common LLM prompts to reduce inference time.
@@ -102,7 +102,7 @@ This project simulates a voice-driven sales agent capable of:
 
 ---
 
-## 🧱 Challenges & Solutions
+##  Challenges & Solutions
 
 | Challenge | Solution |
 |----------|----------|
@@ -112,7 +112,7 @@ This project simulates a voice-driven sales agent capable of:
 | No real telephony support | Mocked interaction with UI & audio playback |
 
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 - **Upgrade LLM**: Use more powerful models like Mistral if GPU becomes available.
 - **Better TTS**: Try SpeechT5 or Bark for natural voice quality.
@@ -120,7 +120,7 @@ This project simulates a voice-driven sales agent capable of:
 - **Language Expansion**: Add multilingual support for broader reach.
 
 
-## ✅ Conclusion
+##  Conclusion
 
 This project delivers a well-architected, CPU-friendly AI Voice Agent using accessible tools and open-source models. Through creative use of LangChain, audio interfaces, and Streamlit, it showcases a thoughtful balance of technical depth and practical limitations — making it a standout solution for AI interaction under resource constraints.
 
